@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravGo | Feed</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="onInit()">
+    <div class="create-post-container">
+        <form onsubmit="onCreatePost(event,this)">
+            <input class="input-profile-picture" type="text" placeholder="Pic url" required>
+            <input class="input-user-name" type="text" placeholder="Enter Username" required>
+            <input class="input-location" type="text" placeholder="Enter location" required>
+            <input class="input-place" type="text" placeholder="Enter place" required>
+            <input class="input-para" type="text" placeholder="Tell about your adventure" required>
+            <input class="input-image" type="text" placeholder="Add image" required>
+            <button type="submit">Create Post</button>
+            <button onclick="onCloseModal()">Close</button>
+        </form>
+    </div>
+
+    <div class="feed-container">
+        <div class="nav-bar">
+            <div class="nav-bar-logo">
+                <img src="logo2.png" width="72px" height="72px">
+            </div>
+            <div class="nav-bar-search">
+                <input class="searchLocationInput" type="text" placeholder="Filter By #Location">
+            </div>
+            <div class="nav-bar-features">
+                <!-- <img src="menu.png" width="35px" height="35px"> -->
+                <button onclick="onPostCreate(this)">Create Post</button>
+            </div>
+        </div>
+        <!-- <div class="post-container-holder"> -->
+            <!-- Render Code go here -->
+            <div class="post-container">
+                <div class="post-content-holder">
+                          <div class="post-content-header">
+                              <div class="post-content-header-user-details">
+                                  <div class="user-profile-img">
+                                      <img class="profile-img" src="WhatsApp Image 2020-01-21 at 19.21.44.jpeg" width="70px" 
+                                      height="70px" >
+                                  </div>
+                                  <div class="user-profile-details">
+                                      <h3>Reem Alon</h2>
+                                          <h4>27/03/2020</h4>
+                                  </div>
+                              </div>
+                              <div class="post-content-header-checkin">
+                                  <h3>
+                                      <span>#</span>Israel 
+                                  </h3>
+                                  <h5>📍 'Mikes place'</h5>
+                              </div>
+                              <div class="post-content-header-features">
+                                  <button class="about">About</button>
+                                  <button>Navigate</button></div>
+                          </div>
+                          <div class="post-content-content">
+                              <div class="post-txt-content">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus tempor
+                                      a dolore, maiores sint non alias repellendus? Quo autem placeat adipisci iusto,
+                                       tenetur officia nobis perferendis illum. Assumenda, ea inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus tempor
+                                       a dolore, maiores sint non alias repellendus? Quo autem placeat adipisci iusto,
+                                        tenetur officia nobis perferendis illum. Assumenda, ea inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus tempor
+                                        a dolore, maiores sint non alias repellendus? Quo autem placeat adipisci iusto,
+                                         tenetur officia nobis perferendis illum. Assumenda, ea inventore!</p>
+                              </div>
+                              <div class="post-slideshow-content">
+                                  <img class="slide-show-content" src="seaport-during-daytime-132037 (1).jpg" width="715">
+                              </div>
+                          </div>
+                      </div>
+              </div>
+        <!-- </div> -->
+    </div>
+    
+
+    <script src="posts-service.js"></script>
+    <script src="posts-controller.js"></script>
+</body>
+
+</html>
