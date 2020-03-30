@@ -9,7 +9,7 @@ body {
 }
 .feed-container {
     height: 100%;
-    background-color: rgb(59, 58, 58);
+    background-color: #F0F2F5;
 }
 .nav-bar {
     position: fixed;
@@ -49,17 +49,18 @@ body {
     right: 5px;
     width: 25%;
     height: 100%;
-    /* border: solid 1px rgb(223, 3, 3); */
+    border: solid 1px rgb(223, 3, 3);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav-bar-features button{
-width: 90px;
+width: 80px;
 height: 45px;
 text-align: center;
 padding: 1px 3px;
 border-radius: 5px;
+font-size: 14px;
 border: none;
 color: white;
 background-image: linear-gradient(to bottom, #354864, #1a2431);
@@ -108,9 +109,9 @@ align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 454px;
-    border-bottom: 1px solid rgba(150, 150, 150, 0.733);
-    /* background-color: rgb(59, 58, 58); */
-    background-image: url(scenic-view-of-dramatic-sky-during-winter-258112.jpg);
+    /* border-bottom: 1px solid rgba(150, 150, 150, 0.733); */
+    background-color: #F0F2F5;
+    /* background-image: url(seaport-during-daytime-132037\ \(1\).jpg); */
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -150,10 +151,12 @@ align-items: center;
     border-bottom: rgb(196, 196, 196) solid 1px;
 }
 .post-txt-content::-webkit-scrollbar{
-    width: 2px;
+    /* width: 2px; */
+    display: none;
 }
 .post-txt-content p {
     color: white;
+    font-size: 14px;
     font-weight: 500;
     margin: 10px;
 }
@@ -273,7 +276,7 @@ align-items: center;
     padding: 5px;
     width: 70px;
     color: white;
-    font-family: Open Sans;
+    font-size: 13px;
     font-weight: 370;
     border: none;
     border-radius: 15px;
